@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "sink",
+  "name": "sainsin-shortener",
   "main": "dist/server/index.mjs",
   "assets": {
     "binding": "ASSETS",
@@ -30,6 +30,12 @@
       "id": "0f92f4cdb515472ca036254e6b98c70a" // IMPORTANT: Change this to your KV namespace ID
     }
   ],
+  "observability": {
+      "logs": {
+        "enabled": true,
+        "invocation_logs": true
+      }
+    }
   "r2_buckets": [
     {
       "binding": "R2",
